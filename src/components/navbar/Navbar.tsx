@@ -12,10 +12,11 @@ function Navbar() {
             			   bg-red-950 text-white'>
             
                 <div className="container flex justify-between text-lg">
-                    Home
+                    <Link to='/home' className="text-2xl font-bold">Home</Link>
 
                     <div className='flex gap-4'>
-                    <Link to='/temas' className='hover:underline'>Categoria</Link>
+                    <Link to='/categoria' className='hover:underline'>Categoria</Link>
+                    <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar categoria</Link>
                         <Link to= '' onClick={logout} className="hover:underline">Sair</Link>
                     </div>
                 </div>
