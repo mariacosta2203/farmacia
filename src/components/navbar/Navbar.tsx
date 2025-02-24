@@ -1,4 +1,11 @@
+import { Link } from "react-router-dom"
+
 function Navbar() {
+
+    function logout(): void {
+        throw new Error("Function not implemented.");
+    }
+
     return (
         <>
             <div className='w-full flex justify-center py-4
@@ -8,8 +15,8 @@ function Navbar() {
                     Home
 
                     <div className='flex gap-4'>
-                        Categorias
-                        Sair
+                    <Link to='/temas' className='hover:underline'>Categoria</Link>
+                        <Link to= '' onClick={logout} className="hover:underline">Sair</Link>
                     </div>
                 </div>
             </div>
@@ -18,3 +25,5 @@ function Navbar() {
 }
 
 export default Navbar
+
+
